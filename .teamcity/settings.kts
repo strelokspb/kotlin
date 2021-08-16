@@ -76,15 +76,13 @@ project {
                     var parentJobId=c.projectName.plus("_").plus(microService).plus(this.name)
                     id(parentJobId)
 
-                    object subproj_vcs : GitVcsRoot({
+                    vcsRoot(object : GitVcsRoot() {
                         url = vcsRootUrl
                         authMethod = password {
                             userName = vcsUsername
                             password = vcsPassword
                         }
                     })
-
-                    vcsRoot(subproj_vcs)
 
                     var bts = sequential {
                         parallel {
