@@ -1,0 +1,25 @@
+{
+"projects": [
+            {
+                "TSXX1": [
+                            {
+                                "service": "svc1proj1name",
+                                "repourl": "https://",
+                                "lang": "java",
+                                "secrets": {
+                                            "secret1": "qwerty",
+                                            "secret2": "qazwsx"
+                                },
+                                "identifiers": {
+                                    "helm": true,
+                                    "ansible": false,
+                                    "dbmigration": false
+                                     
+                                }
+                                 
+                            }
+	    }
+		]
+
+	]
+}
